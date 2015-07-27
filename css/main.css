@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+* {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* $grid-columns: 12;
+ */
+body {
+  font-family: sans-serif; }
+
+div {
+  background-color: blue; }
+
+.background {
+  width: 2000px;
+  background-image: url("../images/bg.jpg");
+  background: cover; }
+
+.background-top {
+  z-index: 0;
+  border: 1.5em solid #fff;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: auto; }
+  .background-top::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .background-top:last-child {
+    margin-right: 0; }
+
+.logo {
+  z-index: 100;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .logo:last-child {
+    margin-right: 0; }
+
+.container,
+header,
+section,
+article,
+footer,
+.contact-footer {
+  max-width: 1028px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after,
+  header::after,
+  section::after,
+  article::after,
+  footer::after,
+  .contact-footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.social-buttons {
+  margin-left: 68.23843%; }
+
+.social-buttons li {
+  list-syle: none;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  height: 3.5em;
+  background-color: red;
+  border-bottom: .25em solid gray; }
+  .social-buttons li:last-child {
+    margin-right: 0; }
+
+.navigation-buttons {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 17.05961%;
+  display: inline-block; }
+  .navigation-buttons::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.navigation-buttons a {
+  background-color: red;
+  border-bottom: .25em solid gray; }
+
+.skate-articles section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: #fdfdfd;
+  height: 350px;
+  padding: 0 2em 0 2em;
+  font-family: Arial;
+  color: #525252; }
+  .skate-articles section:last-child {
+    margin-right: 0; }
+
+.sk8bd-designs img {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  margin: .75em; }
+  .sk8bd-designs img::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .sk8bd-designs img:last-child {
+    margin-right: 0; }
+
+.sk8bd-designs {
+  background-color: #fff; }

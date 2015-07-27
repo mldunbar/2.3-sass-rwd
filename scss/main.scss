@@ -1,0 +1,111 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+* {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+$visual-grid: true;
+$grid-columns: 12;
+
+
+ @mixin border($border) {
+  -webkit-border: $border;
+     -moz-border: $border;
+      -ms-border: $border;
+          border: $border;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+div {
+  background-color: blue;
+}
+
+ .background {
+  width: 2000px;
+  background-image: url("../images/bg.jpg");
+  background: cover;
+}
+
+ .background-top{
+  z-index: 0;
+  border: 1.5em solid #fff;
+  @include outer-container;
+  @include span-columns (12);
+  height: auto;
+}
+
+.logo{
+  z-index: 100;
+  @include span-columns (4);
+}
+
+.container,
+header,
+section,
+article,
+footer,
+.contact-footer {
+  @include outer-container(1028px);
+}
+
+.social-buttons{
+  @include shift (8);
+}
+
+.social-buttons li{
+  list-syle: none;
+  @include span-columns(2);
+  height: 3.5em;
+  background-color: red;
+  border-bottom:.25em solid gray;
+}
+
+.navigation-buttons{
+  @include outer-container();
+  @include shift(2);
+  display: inline-block;
+}
+
+.navigation-buttons a {
+  background-color: red;
+  border-bottom: .25em solid gray;
+}
+
+.skate-articles section{
+  @include span-columns(4);
+  background-color: rgba(253, 253, 253, 1);
+  height: 350px;
+  padding: 0 2em 0 2em;
+
+.skate-articles p{
+  font-family: Arial;
+  font-size: 6px;
+  color: rgba(82, 82, 82, 1);
+}
+
+h3{
+  font-family: Arial;
+  font-size: 12px;
+  color: #000;
+}
+
+.skate-articles a {
+  font-size: 4px;
+}
+
+.sk8bd-designs img{
+  @include outer-container();
+  @include span-columns(1);
+  margin: .75em;
+}
+
+.sk8bd-designs{
+  background-color: #fff;
+}
